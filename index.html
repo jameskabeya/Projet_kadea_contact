@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Carnet de contact</title>
+    <script src="https://kit.fontawesome.com/0bbe447f75.js" crossorigin="anonymous"></script>
+    <title>Liste de contact </title>
 </head>
+
 <body>
-    
+    <header class="Container">
+        <div>
+            <div class="contact">
+                <div>
+                    <h3>Repertoire de Contact</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-all">
+        <div>
+            <div class="Container1">
+                <div>
+                    <h3>Formulaire de Contact</h3>
+                </div>
+            </div>
+            <div class="allinput">
+                <div>
+                    <form action="">
+                        <label class="paragraph1">Prénom</label>
+                        <input id="user_name" type="text" placeholder="user-name" required>
+                        <label class="paragraph1">Nom</label>
+                        <input id="name" type="text" placeholder="name" required>
+                        <label class="paragraph1">Télephone</label>
+                        <input id="number" type="tel" name="phone" pattern="[085]-{099}-[081]"
+                            placeholder="phone-number" required>
+                        <label class="paragraph1">Groupe</label>
+                        <input id="team" type="text" placeholder="Group" required>
+                        <label class="paragraph1">E-mail</label>
+                        <input itemid="mail" type="email" id="email" pattern=".+@example.com" placeholder="E-mail"
+                            required>
+                        <label class="paragraph1">Bio</label>
+                        <input id="biographie" type="text" required>
+
+                        <input id="image" type="image" value="Deposer la photo ici" required>
+
+                </div>
+                <div>
+                    <div class="button">
+                        <input type="submit" value="Créer" id="btn1">
+                        <input id="reset" type='reset' value='Reinit'>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="container2">
+                    <h3>Liste de contacts</h3>
+                </div>
+            </div>
+            <div class="formule">
+                <div>
+                    <div class="formule2">
+                        <img src="dan.jpeg" alt="">
+                        <div class="text">
+                            <div class="icon">
+                                <p><strong id="text">Prénom nom-Group</strong></p>
+                                <div class="container_icons">
+                                    <i class="fa fa-user-pen"></i>
+                                    <i id="icon_delete" class="fa fa-trash-can"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p>+243 89 867 88 91</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aspernatur deserunt
+                                    voluptatum
+                                    nobis.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
     <script src="contact.js"></script>
 </body>
+
 </html>
