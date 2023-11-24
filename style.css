@@ -77,13 +77,17 @@ button{
     margin-left: 25px;
 }
 .paragraph1{
-    margin-right: 450px;
+    margin-right: 445px;
     color: #0880D6;
 }
-#image{
+#ipimage{
     border: dotted #c4c4c4;
-    border-color: ;
+    text-align: center;
+    margin-top: 10px;
+    font-family: poppins;
     height: 150px;
+    font-size: 15px;
+    line-height: 24px;
 }
 .formule{
     width: 48rem;
@@ -98,9 +102,8 @@ button{
 }
 .text{
     margin-left: 3rem;
-}
-.text{
     margin-top: 2rem;
+    gap: 15px;
 }
 .icon{
     display: flex;
@@ -110,4 +113,13 @@ button{
 }
 #icon_delete{
     color: #ff3838;
+}
+@media screen(max-width: 600px){
+    .container-all{
+        flex-direction: column;
+        height: auto;
+    } 
+    .contact{
+        height: 4rem;
+    }
 }
