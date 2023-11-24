@@ -82,7 +82,7 @@ button{
 }
 #image{
     border: dotted #c4c4c4;
-    border-color: ;
+    border-color:#ffffff ;
     height: 150px;
 }
 .formule{
@@ -110,4 +110,12 @@ button{
 }
 #icon_delete{
     color: #ff3838;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#0880D6;
 }
