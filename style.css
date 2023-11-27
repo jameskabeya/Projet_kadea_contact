@@ -77,13 +77,17 @@ button{
     margin-left: 25px;
 }
 .paragraph1{
-    margin-right: 450px;
+    margin-right: 445px;
     color: #0880D6;
 }
-#image{
+#ipimage{
     border: dotted #c4c4c4;
-    border-color:#ffffff ;
+    text-align: center;
+    margin-top: 10px;
+    font-family: poppins;
     height: 150px;
+    font-size: 15px;
+    line-height: 24px;
 }
 .formule{
     width: 48rem;
@@ -98,24 +102,62 @@ button{
 }
 .text{
     margin-left: 3rem;
-}
-.text{
     margin-top: 2rem;
+    gap: 15px;
 }
 .icon{
     display: flex;
 }
-.container_icons{
-    margin-left: 20rem;
-}
-#icon_delete{
-    color: #ff3838;
-}
-#contactForm{
+/*mediaqerti*/
+@media screen and (max-width:630px) {
+   .container-all{
     display: flex;
-    flex-direction: column;
-    gap:10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color:#0880D6;
+    position: absolute;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 100%
+    ;
+   }
+   .Container1{
+    max-width: 90%;
+    margin-left: 100px;
+    display: flex;
+    
+   }
+   .allinput{
+    max-width: 90%;
+    margin-left: 100px;
+   }
+    .container2{
+        max-width: 50%;
+        margin-left: 250px;
+        background: #0880D6;
+         
+        height: 54px;
+        padding: 12px, 0px, 12px, 0px;
+        
+        
+    }
+    .formule2{
+        max-width: 90%;
+        margin-left: 80px;
+
+    }
+    .paragraph1{
+        font-size:0.8em;
+    }
+    .formule{
+        max-width: 90%;
+        margin-left: 100px;
+    }
+    
+    /* .paragraph1{
+        max-width: 50%;
+        margin-right: 445px;
+        margin-left: 100px;
+    } */
+    
+    
 }
+
