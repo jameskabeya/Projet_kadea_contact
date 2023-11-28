@@ -16,11 +16,15 @@ h3{
     color: white;
 }
 
-.Container1{
+h2{ display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background: #0880D6;
     width: 565px; 
     height: 54px;
-    padding: 12px, 0px, 12px, 0px;
+    color: white;
+   
 }
 .allinput{
     width: 560px;
@@ -39,18 +43,23 @@ input{
 #biographie{
     height: 120px;
 }
-.container2{
+h4{ display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background: #0880D6;
     width: 48rem;
     height: 54px;
-    padding: 12px, 115px, 12px, 0px;
+    color: white;
+   
 }
 .container-all{
     display: flex;
-    width: 1,512px;
+    width:100%;
     height: 70rem;
-    padding: 20px, 30px, 20px, 30px;
-    gap: 24px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    gap: 15px;
     margin-top: 2rem;
 }
 img{
@@ -110,4 +119,11 @@ button{
 }
 #icon_delete{
     color: #ff3838;
+}
+.container1{
+  width: 40%;  
+
+}
+.container2{
+    width: 60%;
 }
