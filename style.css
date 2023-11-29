@@ -37,7 +37,8 @@ input{
     height: 40px;
 }
 #biographie{
-    height: 120px;
+    height: 130px;
+    width: 92%;
 }
 .container2{
     background: #0880D6;
@@ -81,13 +82,19 @@ button{
     color: #0880D6;
 }
 #ipimage{
+    display: none;
+}
+.labelimg{
     border: dotted #c4c4c4;
     text-align: center;
     margin-top: 10px;
+    margin-left: 15px;
     font-family: poppins;
     height: 150px;
-    font-size: 15px;
+    width: 93%;
     line-height: 24px;
+    display: block;
+    padding-top: 40px;
 }
 .formule{
     width: 48rem;
@@ -100,15 +107,44 @@ button{
     border-width: 1px, 1px, 1px, 1px; 
     height: 9rem;
 }
+.task4{
+    display: flex;
+}
+i{
+    margin-left: 15rem;
+}
 .text{
+    display: flex;
     margin-left: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     gap: 15px;
 }
+.text1{
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    gap: 15px;
+    font-weight: bold;
+    color: rgb(128, 119, 119);
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 5px;
+    gap: 15px;
+}
+
 .icon{
     display: flex;
 }
-/*mediaqerti*/
+.container_icons{
+    margin-left: 20rem;
+}
+#icon_delete{
+    color: #ff3838;
+}
+/*@mediaqery*/
 @media screen and (max-width:630px) {
    .container-all{
     display: flex;
