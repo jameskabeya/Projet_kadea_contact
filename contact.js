@@ -40,6 +40,8 @@ submit.addEventListener('click', function () {
    label4.innerHTML = inputgroupe.value;
    i.setAttribute('class', "fa fa-user-pen")
    idelete.setAttribute('class', "fa fa-trash-can")
+   idelete.setAttribute('style','color:red;')
+
    // fontdelete.setAttribute('class', "fa fa-trash-can-list")
    label4.appendChild(i);
    label4.appendChild(idelete);
@@ -58,7 +60,7 @@ submit.addEventListener('click', function () {
    let image = document.querySelector('img')
    image.src= nameUser;
    photoup.appendChild(image);
-   image.setAttribute('style','width:25%')
+   image.setAttribute('style','width:150px;height:150px')
    labelphoto.setAttribute('style', 'display:none;')
 
 });
