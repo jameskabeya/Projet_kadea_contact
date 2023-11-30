@@ -55,9 +55,12 @@ input{
     margin-top: 2rem;
 }
 img{
-    border-radius: 50%;
+    border-radius: 90%;
     margin-top: 2%;
     margin-left: 5%;
+}
+#profil{
+    width: 95rem;
 }
 .button{
     display: flex;
@@ -105,14 +108,15 @@ button{
     display: flex;   
     border: 1px solid rgb(202, 197, 197);
     border-width: 1px, 1px, 1px, 1px; 
-    height: 9rem;
+    /* height: 9rem; */
+}
+.blank{
+    margin-right: 20rem;
 }
 .task4{
     display: flex;
 }
-i{
-    margin-left: 15rem;
-}
+
 .text{
     display: flex;
     margin-left: 3rem;
@@ -152,8 +156,7 @@ i{
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
-    max-width: 100%
-    ;
+    max-width: 100%;
    }
    .Container1{
     max-width: 90%;

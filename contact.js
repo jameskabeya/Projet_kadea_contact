@@ -8,7 +8,7 @@ let label = document.querySelector('.task');
 let inputuser = document.querySelector('#user_name');
 let label2 = document.querySelector('.task2');
 
-let name 
+let nameUser 
 
 let inputgroupe = document.querySelector('#team');
 let label4 = document.querySelector('.task4')
@@ -24,10 +24,16 @@ let label6 = document.querySelector('.task6')
 
 let photoup = document.querySelector('#profil')
 
+// let ul = document.querySelector('.listng')
+
 submit.addEventListener('click', function () {
    let i = document.createElement('i')
    let idelete = document.createElement('i')
-   // let fontdelete = document.createAttribute('i') 
+
+   // let li = document.createElement('li')
+   
+   // let listing = document.createAttribute('li')
+   // listing.appendChild('div')
 
    label.innerHTML = inputname.value;
    label2.innerHTML = inputuser.value;
@@ -42,10 +48,15 @@ submit.addEventListener('click', function () {
    label3.innerHTML = number.value;
    label5.innerHTML = inputmail.value;
    label6.innerHTML = inputbiographie.value;
+
+   // ul.appendChild(li)
+   // li.appendChild(i)
+   // li.appendChild(idelete)
+   // // li.appendChild(img)
    
 
    let image = document.querySelector('img')
-   image.src= "dan.jpeg";
+   image.src= nameUser;
    photoup.appendChild(image);
    image.setAttribute('style','width:25%')
    labelphoto.setAttribute('style', 'display:none;')
@@ -70,11 +81,12 @@ inputphoto.addEventListener('drop', function (event) {
 
    let image = document.querySelector('img')
    image.src= event.dataTransfer.files[0].name;
+   nameUser = event.dataTransfer.files[0].name;
    inputphoto.appendChild(image);
    image.setAttribute('style','width:25%')
    labelphoto.setAttribute('style', 'display:none;')
-   inputphoto.appendChild(messageup)
    messageup.innerHTML = "veiller ajouter une photo";
+   console.log(nameUser);
 });
 
 
