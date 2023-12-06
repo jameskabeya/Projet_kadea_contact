@@ -1,50 +1,41 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-main{
+
+main {
     margin-left: 15%;
 }
-.contact{
+
+.contact {
     background-color: #0880D6;
-    width: 1,512rem;
+    width: 1, 512rem;
     height: 4rem;
-    padding: 20px,30px,20px,30px;
-    gap: 24px;
+    position: static;
+    /* padding: 20px,30px,20px,30px; */
+    /* gap: 24px; */
 }
-h3{
+
+h3 {
     padding: 20px;
     color: white;
 }
 
-h2{ display: flex;
+.Container1 {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #0880D6;
-    width: 565px; 
+    width: 565px;
     height: 54px;
     color: white;
-   
+
 }
-.allinput{
-    width: 560px;
-    height: 750px;
-    padding: 14px, 21px,1px,21px;
-    gap: 26px;
-    border: solid 2px;
-    border-color: silver;
-    background: #ffffff;
-    text-align: center;
-}
-input{
-    width: 518px;
-    height: 40px;
-}
-#biographie{
-    height: 130px;
-    width: 92%;
-}
-h4{ display: flex;
+
+.container2 {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -52,47 +43,78 @@ h4{ display: flex;
     width: 48rem;
     height: 54px;
     color: white;
-   
+
 }
-.container-all{
+
+.allinput {
+    width: 560px;
+    height: 750px;
+    padding: 14px, 21px, 1px, 21px;
+    gap: 26px;
+    border: solid 2px;
+    border-color: silver;
+    background: #ffffff;
+    text-align: center;
+}
+
+input {
+    width: 518px;
+    height: 40px;
+}
+
+#biographie {
+    height: 130px;
+    width: 92%;
+}
+
+.container-all {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 70rem;
+    position: relative;
+    right: 50px;
     /* padding-left: 100px;
     padding-right: 100px; */
     gap: 15px;
     margin-top: 2rem;
 }
-img{
-    border-radius: 100%;
-    height: 20%;
-}
-.button{
+
+.button {
     display: flex;
     margin-left: 3%;
     margin-top: 2%;
     width: 50%;
 }
-button{
+
+.enter_infos {
+    display: flex;
+}
+
+button {
     width: 120px;
     height: 40px;
     color: #ffffff;
 }
-#btn1{
+
+#btn1 {
     background-color: #0880D6;
 }
-#reset{
+
+#reset {
     background-color: #ff3838;
     margin-left: 25px;
 }
-.paragraph1{
+
+.paragraph1 {
     margin-right: 445px;
     color: #0880D6;
 }
-#ipimage{
+
+#ipimage {
     display: none;
 }
-.labelimg{
+
+.labelimg {
     border: dotted #c4c4c4;
     text-align: center;
     margin-top: 10px;
@@ -104,43 +126,58 @@ button{
     display: block;
     padding-top: 40px;
 }
-.formule{
+
+.formule {
     display: flex;
-    gap: 20px;
+    /* gap: 5px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 10px; */
 }
-.formule2{
-    display: flex;   
+
+.formule2 {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(202, 197, 197);
-    border-width: 1px, 1px, 1px, 1px; 
+    border-width: 1px, 1px, 1px, 1px;
     /* height: 9rem; */
     width: 48rem;
+    margin-right: 10%;
 }
-.blank{
-    /* margin-right: 20rem; */
-}
-.task4{
+.mycontact{
     display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+.Galary{
+    border-radius: 90%;
+    margin-left: 5px;
+    /* padding: 100px; */
+}
+
+.task4 {
     display: flex;
 }
 
-.text{
-    display: flex;
-    gap: 10px;
-    margin-left: 3rem;
-    font-weight: bold;
+.blank {
+    margin-right: 10rem;
 }
-i{
+
+.text {
+    display: flex;
+}
+
+i {
     margin-left: 170px;
 }
-.text1{
+
+.text1 {
     display: flex;
     margin-left: 3rem;
     margin-top: 1rem;
     gap: 15px;
 }
-.text2{
+
+.text2 {
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
@@ -148,68 +185,208 @@ i{
     gap: 15px;
 }
 
+.task6 {
+    display: block;
+}
+
 /* .icon{
     display: flex;
 } */
-.container_icons{
+.container_icons {
     margin-left: 20rem;
 }
-#icon_delete{
+
+#icon_delete {
     color: #ff3838;
 }
-/*@mediaqery*/
-@media screen and (max-width:630px) {
-   .container-all{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    max-width: 100%;
-   }
-   .Container1{
-    max-width: 90%;
-    margin-left: 100px;
-    display: flex;
-    
-   }
-   .allinput{
-    max-width: 90%;
-    margin-left: 100px;
-   }
-    .container2{
-        max-width: 50%;
-        margin-left: 250px;
+
+/* @mediaqery */
+/* Small devices (portrait and large phones, 767px and down) */
+@media screen and (max-width: 820px) {
+    * {
+        margin: 0;
+    }
+
+    .contact {
+        background-color: #0880D6;
+        width: 100%;
+        height: 4rem;
+        position: static;
+        /* padding: 20px,30px,20px,30px;
+        gap: 24px; */
+    }
+
+    h3 {
+        padding: 20px;
+        color: white;
+    }
+
+    .formul_all {
+        width: 95%;
+    }
+
+    .Container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         background: #0880D6;
-         
+        width: 60%;
+        /* position: relative;
+        right: 60px; */
         height: 54px;
-        padding: 12px, 0px, 12px, 0px;
-        
-        
-    }
-    .formule2{
-        max-width: 90%;
-        margin-left: 80px;
+        color: white;
 
     }
-    .paragraph1{
-        font-size:0.8em;
-    }
-    .formule{
-        max-width: 90%;
-        margin-left: 100px;
-    }
-    
-    
-}
-<<<<<<< HEAD
-.container1{
-  width: 40%;  
 
-}
-.container2{
-    width: 60%;
-}
-=======
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* margin-right: 40%; */
+        position: relative;
+        right: 40px;
+        background: #0880D6;
+        width: 95%;
+        height: 54px;
+        color: white;
 
->>>>>>> 7a58c03ba88574ba08e2314cf961122250c5e0a0
+    }
+
+    .formule2 {
+        /* display: flex;    */
+        border: 1px solid rgb(202, 197, 197);
+        /* border-width: 1px, 1px, 1px, 1px;  */
+        /* height: 9rem; */
+        width: 320px;
+        position: relative;
+        right: 140px;
+    }
+
+    .allinput {
+        width: 59%;
+        height: 750px;
+        padding: 14px, 21px, 1px, 21px;
+        gap: 26px;
+        border: solid 2px;
+        border-color: silver;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    input {
+        width: 95%;
+        height: 40px;
+    }
+
+    #biographie {
+        height: 130px;
+        width: 92%;
+    }
+
+    .container-all {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 80px;
+        margin-top: 2rem;
+    }
+
+    .button {
+        display: flex;
+        margin-left: 3%;
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
+        color: #ffffff;
+    }
+
+    #btn1 {
+        background-color: #0880D6;
+    }
+
+    #reset {
+        background-color: #ff3838;
+        margin-left: 25px;
+    }
+
+    .paragraph1 {
+        margin-right: 445px;
+        color: #0880D6;
+    }
+
+    #ipimage {
+        display: none;
+    }
+
+    .labelimg {
+        border: dotted #c4c4c4;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 15px;
+        font-family: poppins;
+        height: 150px;
+        width: 93%;
+        line-height: 24px;
+        display: block;
+        padding-top: 40px;
+    }
+
+    .formule {
+        display: flex;
+        /* gap: 5px; */
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #image {
+        border-radius: 100%;
+        width: 150px;
+        height: 70%;
+    }
+
+    i {
+        margin-left: 170px;
+    }
+
+    .text1 {
+        display: flex;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        gap: 15px;
+    }
+
+    .task6 {
+        display: block;
+    }
+
+    /* .icon{
+        display: flex;
+    } */
+    .container_icons {
+        margin-left: 20rem;
+    }
+
+    #icon_delete {
+        color: #ff3838;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    .container-all {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 10px;
+        margin-top: 2rem;
+    }
+
+    .formul_all {
+        width: 700px;
+    }
+}

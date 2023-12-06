@@ -1,80 +1,103 @@
-<<<<<<< HEAD
-tab = [];
+let tab = [];
 
 const submit = document.querySelector('#btn1');
-
 let inputname = document.querySelector('#name');
-let label = document.querySelector('.task');
-
 let inputuser = document.querySelector('#user_name');
-let label2 = document.querySelector('.task2');
-
-let nameUser 
-
 let inputgroupe = document.querySelector('#team');
-let label4 = document.querySelector('.task4')
-
-let inputnumber = document.querySelector('#number')
-let label3 = document.querySelector('.task3')
-
+let number = document.querySelector('#number')
 let inputmail = document.querySelector('#mail')
-let label5 = document.querySelector('.task5')
-
 let inputbiographie = document.querySelector('#biographie')
-let label6 = document.querySelector('.task6')
 
-let photoup = document.querySelector('#profil')
+function complet() {
+   myobject = {
+      pastname: inputname.value,
+      name: inputuser.value,
+      team: inputgroupe.value,
+      number: number.value,
+      mail: inputmail.value,
+      Bio: inputbiographie.value,
+   }
+   return myobject;
+}
+let formule2 = document.querySelector('.formule2')
 
-// let ul = document.querySelector('.listng')
+submit.addEventListener('click', function (e) {
+   let myobject = complet();
+   let reader = new FileReader();
+   let image = document.createElement('img')
+   image.className ="Galary";
+      
+      reader.onload = (e) => {
+         console.log('fdsdsfsd');
+         image.src = e.target.result;
+         if (reader.DONE) {
+            alert("chargement fini");
 
-submit.addEventListener('click', function () {
-   let i = document.createElement('i')
-   let idelete = document.createElement('i')
+         }
+        // 
+      }
+      reader.readAsDataURL(file);
+   myobject.galerie=image.src;
 
-   // let li = document.createElement('li')
-   
-   // let listing = document.createAttribute('li')
-   // listing.appendChild('div')
+   tab.push(myobject);
+   console.log(tab);
+   let leng = tab.length;
 
-   label.innerHTML = inputname.value;
-   label2.innerHTML = inputuser.value;
-   label4.innerHTML = inputgroupe.value;
-   i.setAttribute('class', "fa fa-user-pen")
-   idelete.setAttribute('class', "fa fa-trash-can")
-   idelete.setAttribute('style','color:red;')
+   let objectToAdd = tab[leng-1]
+      
+      let mycontact = document.createElement('div')
+      let formule = document.createElement('div')
+      let divimage = document.createElement('div')
+      mycontact.className ="mycontact";
+      let blank = document.createElement('div')
+      let text = document.createElement('div')
+      let task = document.createElement('label')
+      let task2 = document.createElement('label')
+      let task4 = document.createElement('label')
+      let text1 = document.createElement('div')
+      let task3 = document.createElement('label')
+      let text2 = document.createElement('div')
+      let task5 = document.createElement('label')
+      let task6 = document.createElement('label')
 
-   // fontdelete.setAttribute('class', "fa fa-trash-can-list")
-   label4.appendChild(i);
-   label4.appendChild(idelete);
 
-   // label4.appendChild(fontdelete);
-   label3.innerHTML = number.value;
-   label5.innerHTML = inputmail.value;
-   label6.innerHTML = inputbiographie.value;
+      task.innerHTML = inputname.value;
+      task2.innerHTML = inputuser.value;
+      task4.innerHTML = inputgroupe.value;
+      task3.innerHTML = number.value;
+      task5.innerHTML = inputmail.value;
+      task5.innerHTML = inputbiographie.value;
 
-   // ul.appendChild(li)
-   // li.appendChild(i)
-   // li.appendChild(idelete)
-   // // li.appendChild(img)
-   
+      // divimage.appendChild(image)
+      formule.appendChild(blank)
+      mycontact.appendChild(divimage)
+      formule2.appendChild(mycontact)
+      mycontact.appendChild(formule)
+      divimage.appendChild(image)
+      blank.appendChild(text)
+      text.appendChild(task)
+      text.appendChild(text2)
+      text.appendChild(task4)
+      blank.appendChild(text1)
+      console.log(blank);
+      text1.appendChild(task3)
+      blank.appendChild(text2)
+      text2.appendChild(task5)
+      text2.appendChild(task6)
+      formule2.appendChild(mycontact)
 
-   let image = document.querySelector('img')
-   image.src= nameUser;
-   photoup.appendChild(image);
-   image.setAttribute('style','width:150px;height:150px')
-   labelphoto.setAttribute('style', 'display:none;')
 
+      let i = document.createElement('i')
+      let idelete = document.createElement('i')
 });
-
 // add pucture
 let inputphoto = document.querySelector('.container-photo1')
 let labelphoto = document.querySelector('.labelimg')
-let messageup = document.createAttribute('span')
 
 inputphoto.addEventListener('dragover', function (even) {
    even.preventDefault();
    even.stopPropagation();
-   even.dataTransfer.dropEffect='copy';
+   even.dataTransfer.dropEffect = 'copy';
 });
 
 inputphoto.addEventListener('drop', function (event) {
@@ -82,44 +105,13 @@ inputphoto.addEventListener('drop', function (event) {
    event.preventDefault();
    inputphoto.setAttribute('style', 'borde-color:"";');
 
-   let image = document.querySelector('img')
-   image.src= event.dataTransfer.files[0].name;
-   nameUser = event.dataTransfer.files[0].name;
-   inputphoto.appendChild(image);
-   image.setAttribute('style','width:25%')
-   labelphoto.setAttribute('style', 'display:none;')
-   messageup.innerHTML = "veiller ajouter une photo";
-   console.log(nameUser);
+   let photoup = document.querySelector('#profil')
+   file = event.dataTransfer.files[0];
+   let reader = new FileReader();
+
+   reader.onload = (e) => {
+      photoup.src = e.target.result;
+   }
+   reader.readAsDataURL(file);
 });
 
-
-//other to add pucture
-=======
-let prenom = document.querySelector('#user_name')
-let nom = document.querySelector('#name')
-let telephone = document.querySelector('#number')
-let groupe = document.querySelector('#team')
-let email = document.querySelector('#mail')
-let bio = document.querySelector('#biographie')
-let reset = document.querySelector('#reset')
-
-reset.addEventListener('click',function(){
-    prenom.value=""
-});
-
-reset.addEventListener('click',function(){
-    nom.value=""
-});
-reset.addEventListener('click',function(){
-    telephone.value=""
-});
-reset.addEventListener('click',function(){
-    groupe.value=""
-});
-reset.addEventListener('click',function(){
-    email.value=""
-});
-reset.addEventListener('click',function(){
-    bio.value=""
-});
->>>>>>> ad44ec718c7e7ce1ebab8a818cbb058462169217
