@@ -146,6 +146,13 @@ button {
     gap: 15px;
     font-weight: bold;
 }
+.numeros{
+    margin-top: 15px;
+}
+.mailbio{
+    display: block;
+    margin-top: 10px;
+}
 .mycontact{
     display: flex;
     gap: 15px;
@@ -153,28 +160,28 @@ button {
     border: 1px solid rgb(202, 197, 197);
     border-width: 1px, 1px, 1px, 1px;
 }
+.font_delete{
+    display: flex;
+}
 .Galary{
     border-radius: 90%;
+    width: 150px;
     margin-left: 5px;
     /* padding: 100px; */
 }
-
+#profil{
+    width: 20%;
+}
 .task4 {
     display: flex;
 }
-
 .blank {
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
 }
 
 .text {
     display: flex;
 }
-
-i {
-    margin-left: 170px;
-}
-
 .text1 {
     display: flex;
     margin-left: 3rem;
@@ -190,9 +197,10 @@ i {
     gap: 15px;
 }
 
-.task6 {
+/* .task6 {
     display: block;
-}
+    align-items: ;
+} */
 
 /* .icon{
     display: flex;

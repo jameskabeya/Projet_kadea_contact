@@ -58,9 +58,14 @@ submit.addEventListener('click', function (e) {
    task4.className = "fontawasome";
    let text1 = document.createElement('div')
    let task3 = document.createElement('label')
+   text1.className = "numeros";
    let text2 = document.createElement('div')
+   // text2.className = "mailbio";
    let task5 = document.createElement('label')
+   let infodiv = document.createElement('div')
    let task6 = document.createElement('label')
+   let font_delete = document.createElement('div')
+   font_delete.className = "font_delete";
 
    task.innerHTML = inputname.value;
    task2.innerHTML = inputuser.value;
@@ -78,18 +83,29 @@ submit.addEventListener('click', function (e) {
    text.appendChild(task4)
    // task4.appendChild(i)
    // console.log(blank);
+   blank.appendChild(text1)
    text1.appendChild(task3)
    blank.appendChild(text2)
    text2.appendChild(task5)
-   blank.appendChild(text1)
-   text1.appendChild(task6)
+   text2.appendChild(infodiv)
+   infodiv.appendChild(task6)
    formule.appendChild(blank)
    mycontact.appendChild(formule)
    formule2.appendChild(mycontact)
-
-
+   mycontact.appendChild(font_delete)
    let i = document.createElement('i')
+   i.setAttribute('class', "fa fa-user-pen")
    let idelete = document.createElement('i')
+   idelete.setAttribute('class', "fa fa-trash-o")
+   font_delete.appendChild(idelete);
+   font_delete.appendChild(i)
+   // font_delete.appendChild(i)
+
+   let btn_delete = document.createElement('button') 
+
+   idelete.addEventListener('click', function () {
+      mycontact.innerHTML = '';
+    })
 });
 // add pucture
 let inputphoto = document.querySelector('.container-photo1')
@@ -169,7 +185,7 @@ email.addEventListener('blur', function () {
       emailError.textContent = '';
    }
 });
-////////////
+//about delete button reinit
 let prenom = document.querySelector('#name')
 let name1 = document.querySelector('#user_name')
 let telephone = document.querySelector('#number')
