@@ -224,3 +224,4 @@ function validateForm() {
      alert("Tous les champs doivent être remplis");
    }
   }
+  console.log(validateForm);

@@ -213,7 +213,7 @@ button {
     color: #ff3838;
 }
 
-/* @mediaqery */
+@mediaqery */
 /* Small devices (portrait and large phones, 767px and down) */
 /* @media screen and (max-width: 834px) {
     * {
@@ -426,4 +426,4 @@ button {
         width: 70px;
         margin-left: 5px;
     }
-} */
+}
