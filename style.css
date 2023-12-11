@@ -215,7 +215,7 @@ button {
 
 @mediaqery */
 /* Small devices (portrait and large phones, 767px and down) */
-/* @media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) {
     * {
         margin: 0;
     }

@@ -105,9 +105,8 @@ submit.addEventListener('click', function (e) {
    // font_delete.appendChild(i)
 
    let btn_delete = document.createElement('button') 
-
    idelete.addEventListener('click', function () {
-      mycontact.innerHTML = '';
+      mycontact.parentNode.removeChild(mycontact);
     })
 });
 // add pucture
