@@ -20,11 +20,12 @@ function complet() {
    return myobject;
 }
 let formule2 = document.querySelector('.formule2')
-
+let image;
 submit.addEventListener('click', function (e) {
+   
    let myobject = complet();
    let reader = new FileReader();
-   let image = document.createElement('img')
+    image = document.createElement('img')
    image.className = "Galary";
 
    reader.onload = (e) => {
@@ -36,6 +37,7 @@ submit.addEventListener('click', function (e) {
       }
       // 
    }
+   validateForm();
    reader.readAsDataURL(file);
    myobject.galerie = image.src;
 
@@ -95,10 +97,11 @@ submit.addEventListener('click', function (e) {
    mycontact.appendChild(font_delete)
    let i = document.createElement('i')
    i.setAttribute('class', "fa fa-user-pen")
-   let idelete = document.createElement('i')
+   let idelete = document.createElement('a')
    idelete.setAttribute('class', "fa fa-trash-o")
-   font_delete.appendChild(idelete);
+   idelete.setAttribute('style', 'color:red;')
    font_delete.appendChild(i)
+   font_delete.appendChild(idelete);
    // font_delete.appendChild(i)
 
    let btn_delete = document.createElement('button') 
@@ -116,13 +119,13 @@ inputphoto.addEventListener('dragover', function (even) {
    even.stopPropagation();
    even.dataTransfer.dropEffect = 'copy';
 });
-
+let photoup;
 inputphoto.addEventListener('drop', function (event) {
    event.stopPropagation();
    event.preventDefault();
    inputphoto.setAttribute('style', 'borde-color:"";');
 
-   let photoup = document.querySelector('#profil')
+    photoup = document.querySelector('#profil')
    file = event.dataTransfer.files[0];
    let reader = new FileReader();
 
@@ -216,3 +219,8 @@ renit.addEventListener('click',function(){
 renit.addEventListener('click',function(){
    splitimage.value="";
 });
+function validateForm() {
+   if (prenom.value == "" && name1.value == "" && telephone.value =="" && groupe.value == "" && E_mail.value == ""  && image.src=="") {
+     alert("Tous les champs doivent être remplis");
+   }
+  }
