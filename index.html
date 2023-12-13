@@ -17,7 +17,7 @@
                     <h3>Repertoire de Contact</h3>
                 </div>
     </header>
-    <main class="container-all">
+    <div class="container-all">
         <div class="formul_all">
             <div class="Container1">
                 <div>
@@ -25,29 +25,35 @@
                 </div>
             </div>
             <div class="allinput">
-                <div>
+                <div class="myinput">
 
                     <label class="paragraph1">Prénom</label>
-                    <input id="name" type="text">
+                    <input class="input" id="name" type="text">
                     <span id="nameError"></span>
                     <label class="paragraph1">Nom</label>
-                    <input id="user_name" type="text">
+                    <input class="input" id="user_name" type="text">
                     <span id="user_nameError"></span>
                     <label class="paragraph1">Télephone</label>
-                    <input id="number" type="tel" name="phone">
+                    <input class="input" id="number" type="tel" name="phone">
                     <span id="error-message"></span>
+                     <br>
                     <label class="paragraph1">Groupe</label>
-                    <input id="team" type="text"> <br>
+                    <input class="input" id="team" type="text"> 
+                     <br>
                     <label class="paragraph1">Mail</label>
-                    <input id="mail" type="email">
+                    <input class="input" id="mail" type="email">
                     <span id="emailError"></span>
-                    <label class="paragraph1">Bio</label>
-                    <textarea name="" id="biographie" cols="63" rows="10"></textarea>
+                    <br>
+                    <div>
+                    <label class="paragraph1">Bio</label> <br>
+                    <textarea name="" id="biographie" cols="70" rows="25"></textarea>
+                    </div>
 
                     <div class="container-photo1">
                         <div class="labelimg">
-                            <img  id="profil" src="" alt="">
-                            <label for="photo">Deposer la photo ici</label>
+                            <img id="profil" src="" alt="">
+                            <label class="photofile" for="file">Deposer la photo ici</label>
+                            <input id="file" type="file">
                         </div>
                     </div>
 
@@ -61,17 +67,13 @@
 
             </div>
         </div>
-        <div>
-            <div class="formule2">
-                <div class="container2">
-                    <h4>Liste de contacts</h4>
-                </div>
-                <!-- <div><i class="fa fa-trash-o"></i></div> -->
-
+        <div class="formule2">
+            <div class="container2">
+                <h4>Liste de contacts</h4>
             </div>
-            </div>
-                
-    </main>
+            <!-- <div><i class="fa fa-trash-o"></i></div> -->
+        </div>
+    </div>
     <script src="contact.js"></script>
 </body>
 

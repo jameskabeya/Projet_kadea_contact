@@ -4,64 +4,72 @@
     box-sizing: border-box;
 }
 
-main {
-    margin-left: 15%;
-}
 
 .contact {
     background-color: #0880D6;
     width: 1, 512rem;
     height: 4rem;
     position: static;
-    /* padding: 20px,30px,20px,30px; */
-    /* gap: 24px; */
 }
-
 h3 {
     padding: 20px;
     color: white;
 }
-
 .Container1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #0880D6;
-    width: 565px;
+    /* width: 565px; */
     height: 54px;
     color: white;
 
 }
-
+.formul_all{
+    width: 45%;
+}
 .container2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #0880D6;
-    width: 48rem;
+    width: 100%;
     height: 54px;
     color: white;
-
 }
-
+span{
+    color: #ff3838;
+}
+textarea{
+    margin-left: 10px;
+}
+.formule2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 .allinput {
-    width: 560px;
+    /* width: 560px; */
     height: 750px;
     padding: 14px, 21px, 1px, 21px;
     gap: 26px;
     border: solid 2px;
     border-color: silver;
     background: #ffffff;
-    text-align: center;
+    /* text-align: center; */
 }
-
-input {
-    width: 518px;
+.myinput{
+    margin-left: 10px;
+}
+.input {
+    width: 95%;
     height: 40px;
 }
-
+#file{
+    display: none;
+}
 #biographie {
     height: 130px;
     width: 92%;
@@ -69,14 +77,12 @@ input {
 
 .container-all {
     display: flex;
-    width: 70%;
+    width: 100%;
     height: 70rem;
-    position: relative;
-    right: 50px;
-    /* padding-left: 100px;
-    padding-right: 100px; */
+    padding-left: 5%;
     gap: 15px;
     margin-top: 2rem;
+
 }
 
 .button {
@@ -91,22 +97,36 @@ input {
 }
 
 button {
-    width: 120px;
-    height: 40px;
     color: #ffffff;
 }
 
 #btn1 {
+    height: 40px;
+    width: 120px;
+    border-color: #0880D6;
     background-color: #0880D6;
 }
-
+.btnmodify{
+    height: 40px;
+    width: 120px;
+    background-color: #5bf30a; 
+}
 #reset {
+    height: 40px;
+    width: 120px;
+    border-color: #ff3838;
     background-color: #ff3838;
     margin-left: 25px;
 }
-
+.btncancel{
+    height: 40px;
+    width: 120px;
+    border-color: #ff3838;
+    background-color: #ff3838;
+    margin-left: 25px;
+}
 .paragraph1 {
-    margin-right: 445px;
+    /* margin-right: 445px; */
     color: #0880D6;
 }
 
@@ -118,7 +138,7 @@ button {
     border: dotted #c4c4c4;
     text-align: center;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
     font-family: poppins;
     height: 150px;
     width: 93%;
@@ -129,17 +149,6 @@ button {
 
 .formule {
     display: flex;
-    /* gap: 5px;
-    width: 100%;
-    padding-top: 10px; */
-}
-
-.formule2 {
-    display: flex;
-    flex-direction: column;
-    /* height: 9rem; */
-    width: 48rem;
-    margin-right: 10%;
 }
 .divNames{
     display: flex;
@@ -148,6 +157,12 @@ button {
 }
 .numeros{
     margin-top: 15px;
+}
+.gmail{
+    margin-top: 5px;  
+}
+.divbio{
+    margin-top: 10px; 
 }
 .mailbio{
     display: block;
@@ -175,10 +190,6 @@ button {
 .task4 {
     display: flex;
 }
-.blank {
-    /* margin-right: 10rem; */
-}
-
 .text {
     display: flex;
 }
@@ -196,15 +207,6 @@ button {
     margin-top: 5px;
     gap: 15px;
 }
-
-/* .task6 {
-    display: block;
-    align-items: ;
-} */
-
-/* .icon{
-    display: flex;
-} */
 .container_icons {
     margin-left: 20rem;
 }
@@ -215,215 +217,61 @@ button {
 
 /* @mediaqery */
 /* Small devices (portrait and large phones, 767px and down) */
-@media screen and (max-width: 834px) {
+@media screen and (min-width: 428px) and (max-width: 900px) {
     * {
         margin: 0;
     }
-
-    .contact {
-        background-color: #0880D6;
+    .Galary{
+        border-radius: 90%;
+        margin-left: 5px;
+        width: 105px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 428px) {
+    * {
+        margin: 0;
+    }
+    .container-all {
+        display: block;
         width: 100%;
-        height: 4rem;
-        position: static;
+        height: 70rem;
+        padding-left: 5%;
+        gap: 15px;
+        margin-top: 2rem;
+    
     }
-
-    h3 {
-        padding: 20px;
-        color: white;
-    }
-
-    .formul_all {
+    .formul_all{
         width: 95%;
     }
-
-    .Container1 {
+ 
+    .formule2 {
+        padding-top: 15px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: #0880D6;
-        width: 60%;
-        height: 54px;
-        color: white;
-
-    }
-
-    .container2 {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        right: 180px;
-        background: #0880D6;
-        width: 345px;
-        height: 54px;
-        color: white;
-
-    }
-    .mycontact{
-        position: relative;
-        right: 180px;
-        width: 345px;
-    }
-    .divNames{
-        display: flex;
-        gap: 7px;
-        font-weight: bold; 
+        flex-direction: column;
+        width: 95%;
     }
     .Galary{
         border-radius: 90%;
-        width: 100px;
         margin-left: 5px;
+        width: 55px;
     }
-    .font_delete{
-        position: relative;
-        right: 13rem;
+    .mycontact{
+        gap: 2px;
     }
-    .allinput {
-        width: 60%;
-        height: 750px;
-        padding: 14px, 21px, 1px, 21px;
-        gap: 26px;
-        border: solid 2px;
-        border-color: silver;
-        background: #ffffff;
-        text-align: center;
-    }
-
-    input {
-        width: 95%;
-        height: 40px;
-    }
-
-    #biographie {
-        height: 130px;
-        width: 92%;
-    }
-
-    .container-all {
-        display: flex;
-        width: 100%;
-        position: relative;
-        right: 80px;
-        margin-top: 2rem;
-    }
-
-    .button {
-        display: flex;
-        margin-left: 3%;
-        margin-top: 2%;
-        width: 50%;
-    }
-
-    button {
-        width: 120px;
-        height: 40px;
-        color: #ffffff;
-    }
-
-    #btn1 {
-        background-color: #0880D6;
-    }
-
-    #reset {
-        background-color: #ff3838;
-        margin-left: 25px;
-    }
-
-    .paragraph1 {
-        margin-right: 445px;
-        color: #0880D6;
-    }
-
-    #ipimage {
-        display: none;
-    }
-
     .labelimg {
         border: dotted #c4c4c4;
         text-align: center;
         margin-top: 10px;
-        margin-left: 12px;
+        margin-left: 5px;
         font-family: poppins;
-        height: 160px;
-        width: 90%;
+        height: 150px;
+        width: 93%;
         line-height: 24px;
         display: block;
+    }
+    .button{
         padding-top: 40px;
-    }
-
-    .formule {
-        display: flex;
-        width: 100%;
-        padding-top: 10px;
-    }
-
-    #image {
-        border-radius: 100%;
-        width: 150px;
-        height: 70%;
-    }
-
-    i {
-        margin-left: 170px;
-    }
-
-    .text1 {
-        display: flex;
-        margin-left: 3rem;
-        margin-top: 1rem;
-        gap: 15px;
-    }
-
-    .task6 {
-        display: block;
-    }
-    .container_icons {
-        margin-left: 20rem;
-    }
-
-    #icon_delete {
-        color: #ff3838;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .container-all {
-        flex-direction: column;
-        display: block;
         position: relative;
-        left: 8px;
-        
-    }
-    .container2 {
-        margin-top: 15px;
-        flex-direction: row;
-        position: relative;
-        left: 1px;
-        background: #0880D6;
-        width: 40%;
-        height: 54px;
-        color: white;
-
-    }
-    .Container1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background: #0880D6;
-        width: 70%;
-        height: 54px;
-        color: white;
-
-    }
-    .mycontact{
-        position: relative;
-        left: 3px;
-        width: 40%;
-    }
-    .Galary{
-        border-radius: 90%;
-        width: 70px;
-        margin-left: 5px;
+        left: 70px;
     }
 }
