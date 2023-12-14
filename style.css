@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 .contact {
     background-color: #0880D6;
     width: 1, 512rem;
@@ -257,6 +255,10 @@ button {
     }
     .mycontact{
         gap: 2px;
+    }
+    .font_delete{
+        position: relative;
+        /* right: 2rem; */
     }
     .labelimg {
         border: dotted #c4c4c4;

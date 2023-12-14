@@ -122,7 +122,7 @@ submit.addEventListener('click', function (e) {
       button.querySelector('.btncancel')
       let btnexist = button.querySelector('.btnmodify')
       let btnexistcancel = button.querySelector('.btncancel')
-      if(btnexist){
+      if (btnexist) {
          button.removeChild(btnexist)
          button.removeChild(btnexistcancel)
       }
@@ -134,7 +134,7 @@ submit.addEventListener('click', function (e) {
       console.log(btnmodify);
       submit.style.display = 'none'
       renit.style.display = 'none'
-      
+
 
       btnmodify.addEventListener('click', function () {
          task.innerHTML = inputname.value;
@@ -144,11 +144,33 @@ submit.addEventListener('click', function (e) {
          task5.innerHTML = inputmail.value;
          task6.innerHTML = inputbiographie.value;
 
+         submit.style.display = 'block'
          btnmodify.style.display = 'none'
          btncancel.style.display = 'none'
+         renit.style.display = 'block'
+
+         prenom.value = "";
+         name1.value = "";
+         telephone.value = "";
+         groupe.value = "";
+         E_mail.value = "";
+         bio.value = "";
+         profil.parentNode.removeChild(profil);
+
+      })
+      btncancel.addEventListener('click', function () {
+         prenom.value = "";
+         name1.value = "";
+         telephone.value = "";
+         groupe.value = "";
+         E_mail.value = "";
+         bio.value = "";
          submit.style.display = 'block'
+         btnmodify.style.display = 'none'
+         btncancel.style.display = 'none'
          renit.style.display = 'block'
       })
+
 
    })
    prenom.value = "";
@@ -157,6 +179,7 @@ submit.addEventListener('click', function (e) {
    groupe.value = "";
    E_mail.value = "";
    bio.value = "";
+   profil.parentNode.removeChild(profil);
 
 });
 // add pucture
@@ -274,7 +297,7 @@ renit.addEventListener('click', function () {
    groupe.value = "";
    E_mail.value = "";
    bio.value = "";
-   let profil = document.querySelector('.profil')
+   let profil = document.querySelector('#profil')
    profil.parentNode.removeChild(profil);
 
 });
